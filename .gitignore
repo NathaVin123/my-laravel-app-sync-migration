@@ -23,39 +23,39 @@ yarn-error.log
 /.zed
 
 # Ignore Docker file
-# Dockerfile
+Dockerfile
 docker-compose.yml
 composer.lock
 package-lock.json
+.gitattributes
+.gitignore
 
-# # === Migration Only === (Command when you want to update code).
-# # Ignore everything in the database directory
-# /database/*
-# # Allow only the migrations folder inside database
-# !/database/migrations/
-# # Ignore everything inside the migrations folder except actual migration files
-# /database/migrations/*
-# !/database/migrations/*.php
-# app/*
-# bootstrap/*
-# config/*
-# docker/*
-# nginx/*
-# public/*
-# resources/*
-# routes/*
-# storage/*
-# tests/*
-# vendor/*
-# .docker
-# .editorconfig
-# .env.example
-# .gitattributes
-# .gitignore
-# .php_cs
-# artisan
-# composer.json
-# package.json
-# phpunit.xml
-# README.md
-# vite.config.js
+# === Migration Only === (Command when you want to update code).
+# Ignore everything in the database directory
+/database/*
+# Allow only the migrations folder inside database
+!/database/migrations/
+# Ignore everything inside the migrations folder except actual migration files
+/database/migrations/*
+!/database/migrations/*.php
+app/*
+bootstrap/*
+config/*
+docker/*
+nginx/*
+public/*
+resources/*
+routes/*
+storage/*
+tests/*
+vendor/*
+.docker
+.editorconfig
+.env.example
+.php_cs
+artisan
+composer.json
+package.json
+phpunit.xml
+README.md
+vite.config.js
