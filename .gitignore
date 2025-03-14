@@ -23,7 +23,7 @@ yarn-error.log
 /.zed
 
 # Ignore Docker file
-Dockerfile
+# Dockerfile
 docker-compose.yml
 composer.lock
 package-lock.json
