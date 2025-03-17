@@ -11,9 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('transaction_code', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+        Schema::table('transaction_code', function (Blueprint $table) {
+            $table->string('transaction_code_name', 99)->after('id');
         });
     }
 
@@ -22,6 +21,8 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('transaction_code');
+        Schema::table('transaction_code', function (Blueprint $table) {
+            $table->dropColumn('transaction_code_name');
+        });
     }
 };
